@@ -48,6 +48,8 @@ also runs costmap creation using lidar and camera that takes into account 3d obj
 	<!-- urdf xml robot description loaded on the Parameter Server-->
 	<param name="robot_description" command="$(find xacro)/xacro.py '$(find unicorn_description)/urdf/unicorn_cam.urdf.xacro'" />
 
+ 	<node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0.0 0.0 0.0 0.0 0.0 0.0 map odom_gazebo 100" />
+
 	<!-- push robot_description to factory and spawn robot in gazebo -->
 	<node name="automower_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model automower -x 7.5 -y -2.6 -z 0.2 -Y -1.5707" />
 

@@ -56,11 +56,11 @@
             will control the frame rate. -->
           <updateRate>0.0</updateRate>
           <cameraName>camera</cameraName>
-          <imageTopicName>/camera/depth/image_raw</imageTopicName>
-          <cameraInfoTopicName>/camera/depth/camera_info</cameraInfoTopicName>
-          <depthImageTopicName>/camera/depth/image_raw</depthImageTopicName>
-          <depthImageInfoTopicName>/camera/depth/camera_info</depthImageInfoTopicName>
-          <pointCloudTopicName>/camera/depth/points</pointCloudTopicName>
+          <imageTopicName>camera/depth/image_raw</imageTopicName>
+          <cameraInfoTopicName>camera/depth/camera_info</cameraInfoTopicName>
+          <depthImageTopicName>camera/depth/image_raw</depthImageTopicName>
+          <depthImageInfoTopicName>camera/depth/camera_info</depthImageInfoTopicName>
+          <pointCloudTopicName>camera/depth/points</pointCloudTopicName>
           <frameName>camera_left_depth_link</frameName>
           <robotNamespace>${robot_namespace}</robotNamespace>
           <pointCloudCutoff>0.05</pointCloudCutoff>

@@ -1,5 +1,4 @@
 // Reads Ultra sonic sensor data from the USB port.
-//test_git
 
 #include <unicorn/range_sensor_driver.h>
 
