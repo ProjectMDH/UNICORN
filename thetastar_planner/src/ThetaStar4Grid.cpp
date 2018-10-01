@@ -173,7 +173,7 @@ inline bool ThetaStar4Grid::LoS_Check(int start, int goal) {
 					ptr -= width;
 					f -= dx;
 				}
-				if (!*ptr) return false;
+				if (*ptr) return false;
 			}
 		}
 		else {
